@@ -18,6 +18,7 @@ on:
         default: "openwrt:22.03.5"
         type: choice
         options:
+          - openwrt:23.05.0
           - openwrt:22.03.5
           - openwrt:21.02.7
           - openwrt:19.07.10
@@ -258,9 +259,9 @@ jobs:
             ### OpenWrt Image information
             - Default IP: 192.168.1.1
             - Default username: root
-            - Default password: password
+            - Default password: -
             - Default WIFI name: OpenWrt
-            - Default WIFI password: none
+            - Default WIFI password: -
             ### Install to EMMC
             - Login to OpenWrt → System → Amlogic Service → Install OpenWrt
             ### OpenWrt Image Verification
